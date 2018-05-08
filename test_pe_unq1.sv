@@ -19,18 +19,18 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
-// Parameter use_bool 	= 1
-// Parameter reg_out 	= 0
-// Parameter mult_mode 	= 1
 // Parameter use_add 	= 1
-// Parameter lut_inps 	= 3
 // Parameter use_div 	= 0
+// Parameter lut_inps 	= 3
+// Parameter use_shift 	= 1
 // Parameter is_msb 	= 0
+// Parameter reg_out 	= 0
 // Parameter en_debug 	= 1
+// Parameter use_bool 	= 1
+// Parameter reg_inputs 	= 1
 // Parameter use_cntr 	= 0
 // Parameter en_double 	= 0
-// Parameter use_shift 	= 1
-// Parameter reg_inputs 	= 1
+// Parameter mult_mode 	= 1
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //

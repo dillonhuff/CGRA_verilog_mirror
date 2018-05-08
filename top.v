@@ -34,7 +34,7 @@
 //
 // ---------------- End Pre-Generation Pramameters Status Report ----------------
 
-// connect_GC (_GENESIS2_DECLARATION_PRIORITY_) = 1
+// connect_GC (_GENESIS2_DECLARATION_PRIORITY_) = 0
 //
 
 //.......     .......     io1_0x2     io1_0x3     io1_0x4     io1_0x5     io1_0x6     io1_0x7     io1_0x8     io1_0x9     io1_0xA     io1_0xB     io1_0xC     io1_0xD     io1_0xE     io1_0xF     io1_0x10    io1_0x11    .......     .......     
@@ -137,6 +137,8 @@ reset_in,
 // VERILATOR_PORT7
 // VERILATOR_PORT8
 // -------------------------------------
+config_addr_in,
+config_data_in,
 tdi,
 tdo,
 tms,
@@ -162,6 +164,8 @@ mdllout_pad,
 lf_out
 );
 
+  input [31:0] config_addr_in;
+  input [31:0] config_data_in;
   input clk_in;
   input reset_in;
   input tdi;
@@ -308,11 +312,6 @@ wire [31:0] analog_r14;
     (
       .clk_in(clk_in),
       .reset_in(reset_in),
-      .clk_out(clk),
-      .reset_out(reset),
-      .config_addr_out(config_addr),
-      .config_data_out(config_data),
-      .write(config_write),
       .config_data_in(read_data),
       .tdi(tdi),
       .tdo(tdo),
@@ -338,6 +337,12 @@ wire [31:0] analog_r14;
       .read(config_read),
       .jm_out(jm_out)
     );
+    //UNTIL WE FIX TESTS TO INPUT CFG ADDR AND DATA THROUGH JTAG, DON'T RUN CLK SIGNALS THROUGH GC
+    assign config_addr = config_addr_in;
+    assign config_data = config_data_in;
+    assign clk = clk_in;
+    assign reset = reset_in;
+    assign config_write = 1;
   mdll_top mdll_top 
   (
     .ext_cki(ext_cki),  // (+) cmos clock   . (reference clock   .)

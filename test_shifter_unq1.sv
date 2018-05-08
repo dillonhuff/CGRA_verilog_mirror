@@ -19,10 +19,10 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
+// Parameter is_msb 	= 0
 // Parameter en_double 	= 0
 // Parameter en_trick 	= 0
 // Parameter en_opt 	= 1
-// Parameter is_msb 	= 0
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //

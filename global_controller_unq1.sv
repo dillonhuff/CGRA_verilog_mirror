@@ -351,6 +351,7 @@ reg [31:0] analog_addr;
 		analog_wr_en <= 0;
 		analog_data_in <= 0;
 		analog_addr <= 0;
+		state <= ready;
     	end
 
     	else begin

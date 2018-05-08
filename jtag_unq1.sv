@@ -19,8 +19,8 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
-// Parameter SYSCLK_CFG_BUS_WIDTH 	= 32
 // Parameter SYSCLK_CFG_ADDR_WIDTH 	= 32
+// Parameter SYSCLK_CFG_BUS_WIDTH 	= 32
 // Parameter SYSCLK_CFG_OPCODE_WIDTH 	= 5
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----

@@ -19,8 +19,8 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
-// Parameter dwidth 	= 16
 // Parameter ddepth 	= 1024
+// Parameter dwidth 	= 16
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //
@@ -217,6 +217,7 @@ end
 
 
 always @(*) begin
+  read_data_sram = {16'b0, (config_en_sram[3:2]==2'b0) ? mem_data_out0:mem_data_out1};
   if(config_en_sram != 4'b0) begin
       mem_cen0_int = 1'b1;
       mem_cen1_int = 1'b1;
@@ -227,7 +228,7 @@ always @(*) begin
       mem_addr = {(config_en_sram[3] | config_en_sram[1]), config_addr[31:24]};
       mem_data_in0 = config_data[15:0];
       mem_data_in1 = config_data[15:0];
-      read_data_sram = {16'b0, (config_en_sram[3:2]==2'b0) ? mem_data_out0:mem_data_out1};
+      data_out = (sram_sel==1'b1)?mem_data_out1:mem_data_out0;
       valid_out = 1'b0;  
   end
   else begin
@@ -321,7 +322,7 @@ linebuffer_control_unq1  linebuffer_control
 .data_in(data_in_int),
 .wen(wen_in_int),
 .data_out(lb_out),
-.stall_read(ren_in),
+.stall_read(1'b0),
 .valid(lb_valid_out),
 .almost_full(lb_almost_full),
 .almost_empty(lb_almost_empty),

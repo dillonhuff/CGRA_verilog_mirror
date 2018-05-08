@@ -20,8 +20,8 @@
 //
 //	From 'generate' statement (priority=5):
 // Parameter Width 	= 5
-// Parameter Type 	= REFlop
 // Parameter Default 	= 0
+// Parameter Type 	= REFlop
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //

@@ -19,22 +19,22 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
-// Parameter mult_mode 	= 1
+// Parameter use_add 	= 1
+// Parameter use_shift 	= 1
+// Parameter use_max_min 	= 1
+// Parameter use_relu 	= 0
+// Parameter is_msb 	= 0
+// Parameter get_carry 	= 1
+// Parameter use_abs 	= 1
+// Parameter en_double 	= 0
+// Parameter use_div 	= 0
 // Parameter debug 	= 0
 // Parameter en_ovfl 	= 1
-// Parameter use_relu 	= 0
-// Parameter use_max_min 	= 1
-// Parameter use_div 	= 0
-// Parameter use_add 	= 1
 // Parameter en_trick 	= 0
 // Parameter use_bool 	= 1
-// Parameter en_opt 	= 1
-// Parameter use_shift 	= 1
 // Parameter use_cntr 	= 0
-// Parameter get_carry 	= 1
-// Parameter en_double 	= 0
-// Parameter use_abs 	= 1
-// Parameter is_msb 	= 0
+// Parameter mult_mode 	= 1
+// Parameter en_opt 	= 1
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //

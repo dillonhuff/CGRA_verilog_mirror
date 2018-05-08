@@ -19,10 +19,10 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
-// Parameter has_constant 	= 0
-// Parameter width 	= 16
-// Parameter num_tracks 	= 10
 // Parameter feedthrough_outputs 	= 11111111111111
+// Parameter width 	= 16
+// Parameter has_constant 	= 0
+// Parameter num_tracks 	= 10
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //

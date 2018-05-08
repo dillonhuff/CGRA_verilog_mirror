@@ -19,13 +19,13 @@
 // --------------- Begin Pre-Generation Parameters Status Report ---------------
 //
 //	From 'generate' statement (priority=5):
-// Parameter width 	= 1
-// Parameter is_bidi 	= 0
-// Parameter num_tracks 	= 5
 // Parameter registered_outputs 	= 11111
 // Parameter feedthrough_outputs 	= 00000
-// Parameter pe_output_count 	= 3
+// Parameter is_bidi 	= 0
 // Parameter sides 	= 4
+// Parameter width 	= 1
+// Parameter num_tracks 	= 5
+// Parameter pe_output_count 	= 3
 //
 //		---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
 //
